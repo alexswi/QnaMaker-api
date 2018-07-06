@@ -11,5 +11,12 @@ namespace QnaMakerApi.Requests
         ///     Knowledge base identity.
         /// </summary>
         public Guid KnowledgeBaseId { get; set; }
+
+        public Environment Environment { get; set; }
+    }
+
+    public enum Environment {
+        Test,
+        Prod
     }
 }
